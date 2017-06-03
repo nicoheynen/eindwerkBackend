@@ -77,3 +77,6 @@ C:\Users\nicolas\Desktop\TFE\FormsLayout and offer modif - 05082017\eindwerkBack
 C:\Users\nicolas\Desktop\TFE\FormsLayout and offer modif - 05082017\eindwerkBackend\eindwerkBackend\bin\EntityFramework.xml
 C:\Users\nicolas\Desktop\TFE\FormsLayout and offer modif - 05082017\eindwerkBackend\eindwerkBackend\bin\EntityFramework.SqlServer.xml
 C:\Users\nicolas\Desktop\TFE\FormsLayout and offer modif - 05082017\eindwerkBackend\eindwerkBackend\obj\Debug\eindwerkBackend.csprojResolveAssemblyReference.cache
+C:\Users\nicolas\Desktop\TFE\FormsLayout and offer modif - 05082017\eindwerkBackend\eindwerkBackend\bin\System.Web.Cors.dll
+C:\Users\nicolas\Desktop\TFE\FormsLayout and offer modif - 05082017\eindwerkBackend\eindwerkBackend\bin\System.Web.Http.Cors.dll
+C:\Users\nicolas\Desktop\TFE\FormsLayout and offer modif - 05082017\eindwerkBackend\eindwerkBackend\bin\System.Web.Http.Cors.xml

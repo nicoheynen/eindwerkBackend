@@ -54,7 +54,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Products.cs" />
-    <Compile Include="Models\ClientCompanyInfo.cs" />
+    <Compile Include="Models\ClientInfo.cs" />
     <Compile Include="Models\GeneralOfferInfo.cs" />
     <Compile Include="Models\UserCompanyInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
