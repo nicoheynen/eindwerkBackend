@@ -50,13 +50,26 @@ namespace eindwerkBackend.Controllers
         }
 
         // DELETE api/values/5
-        public async System.Threading.Tasks.Task<ClientInfo> DeleteAsync([FromBody]int id)
+        //public ClientInfo Delete([FromBody] ClientInfo clientInfo)
+        //{
+        //    var result = new ClientInfo();
+        //    using (var context = new EindwerkBackendContext())
+        //    {
+        //        result = clientInfo;
+        //        context.ClientInfo.Remove(result);
+        //        context.SaveChanges();
+        //    }
+        //    return result;
+
+        //}
+
+        public ClientInfo Delete(int id)
         {
             var result = new ClientInfo();
             using (var context = new EindwerkBackendContext())
             {
-              
-                result = await context.ClientInfo.SingleOrDefaultAsync(c => c.Id == id);
+
+                result = context.ClientInfo.FirstOrDefault(c => c.Id == id);
                 context.ClientInfo.Remove(result);
                 context.SaveChanges();
 
