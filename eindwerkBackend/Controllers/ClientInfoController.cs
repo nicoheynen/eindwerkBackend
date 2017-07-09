@@ -49,20 +49,38 @@ namespace eindwerkBackend.Controllers
 
         }
 
+                // PUT api/values/5
+     
+            public ClientInfo Put([FromBody] ClientInfo clientInfo)
+        {
+ 
+                var result = new ClientInfo();
+                using (var context = new EindwerkBackendContext())
+                {
+
+                    result = context.ClientInfo.FirstOrDefault(c => c.Id == clientInfo.Id);
+
+                    result.ClientCity = clientInfo.ClientCity;
+                    result.ClientNumber = clientInfo.ClientNumber;
+                    result.ClientName = clientInfo.ClientName;
+                    result.ClientStreetName = clientInfo.ClientStreetName;
+                    result.ClientHouseNumber = clientInfo.ClientHouseNumber;
+                    result.ClientPostalCode = clientInfo.ClientPostalCode;
+                    result.TvaClient = clientInfo.TvaClient;
+                    //result = clientInfo;
+                    //context.ClientInfo.Update(result);
+                    context.SaveChanges();
+
+                }
+
+                return result;
+            
+        }
+
+        
+
         // DELETE api/values/5
-        //public ClientInfo Delete([FromBody] ClientInfo clientInfo)
-        //{
-        //    var result = new ClientInfo();
-        //    using (var context = new EindwerkBackendContext())
-        //    {
-        //        result = clientInfo;
-        //        context.ClientInfo.Remove(result);
-        //        context.SaveChanges();
-        //    }
-        //    return result;
-
-        //}
-
+  
         public ClientInfo Delete(int id)
         {
             var result = new ClientInfo();
